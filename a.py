@@ -1,0 +1,50 @@
+# coding=utf-8
+import os
+import random
+# -*- coding: utf-8 -*-
+voices =  {
+"Alex"      : "Most people recognize me by my voice.",
+"Alice"     : "Tirare il pacco.",
+"Alva"      : "Gå som katten kring het gröt.",
+"Amelie"    : "Ça a pas d’allure!",
+"Anna"      : "Da liegt der Hund begraben.",
+"Carmit"    : "כואב לי הלב.",
+"Damayanti" : "kambing dibedakin.",
+"Daniel"    : "Please stop tickling me!",
+"Diego"     : "Ponte las pilas.",
+"Ellen"     : "Lemand achter het behang kunnen plakken.",
+"Fiona"     : "I have a frog in my throat. No, I mean a real frog!",
+"Fred"      : "I sure like being inside this fancy computer",
+"Ioana"     : "Te îmbeți cu apă rece.",
+"Joana"     : "Tirar o cavalinho da chuva.",
+"Kanya"     : "สวัสดีค่ะ ดิฉันชื่อKanya",
+"Karen"     : "The light you see at the end of the tunnel is the headlamp of a fast approaching train.",
+"Kyoko"     : "We cannot communicate with these carbon units.",
+"Laura"     : "Ako sa máš?.",
+"Lekha"     : "नमस्कार, मेरा नाम लेखा है.Lekha[[FEMALE_NAME]]मै हिंदी मे बोलने वाली आवाज़ हूँ.",
+"Luciana"   : "A batata ta assando.",
+"Mariska"   : "Üdvözlöm! Mariska vagyok. Én vagyok a magyar hang.",
+"Mei-Jia"   : "您好，我叫美佳。我說國語。",
+"Melina"    : "Γεια σας, ονομάζομαι Melina. Είμαι μια ελληνική φωνή.",
+"Milena"    : "Здравствуйте, меня зовут Milena. Я – русский голос системы.",
+"Moira"     : "Do not pull the wool over my eyes.",
+"Monica"    : "Más aburrido que mico en un bonsái.",
+"Nora"      : "Å være midt i smørøyet.",
+"Paulina"   : "¿Qué onda?.",
+"Samantha"  : "Spring has sprung, fall has fell, winter's here and it's colder than usual.",
+"Sara"      : "Klap lige hesten.",
+"Satu"      : "sataa kuin Esterin perseestä.",
+"Sin-ji"    : "您好，我叫 Sin-ji。我講廣東話。",
+"Tessa"     : "Pull the plug! I'm drowning!",
+"Thomas"    : "Ah, la vache!.",
+"Ting-Ting" : "您好，我叫Ting-Ting。我讲中文普通话。",
+"Veena"     : "I need to go on a really long vacation.",
+"Victoria"  : "Isn't it nice to have a computer that will talk to you?",
+"Xander"    : "Nu komt de aap uit de mouw.",
+"Yelda"     : "Nazar değmesin.",
+"Yuna"      : "안녕하세요. 제 이름은 Yuna입니다. 저는 한국어 음성입니다.",
+"Zosia"     : "kiedy wszedłeś między wrony, musisz krakać jak i one.",
+"Zuzana"    : "To je jiné kafe."
+}
+voice, text = random.choice(list(voices.items()))
+os.system('say -v {} "{}"'.format(voice, text))
